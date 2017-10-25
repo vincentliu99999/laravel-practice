@@ -67,3 +67,5 @@ Route::delete('/test', function () {
     echo '<input type="submit">';
     echo '</form>';
 });
+
+Route::get('/helloLaravel', 'TestController@index');
