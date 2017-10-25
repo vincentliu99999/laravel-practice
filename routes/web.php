@@ -68,4 +68,10 @@ Route::delete('/test', function () {
     echo '</form>';
 });
 
+// by controller
 Route::get('/helloLaravel', 'TestController@index');
+
+// by view
+Route::get('/helloBlade', function () {
+    return view('hello')->with('name', '愛因斯坦')->with('massage', 'Where there\'s a will, there\'s a way');
+});
